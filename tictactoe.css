@@ -1,0 +1,133 @@
+ @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap');
+ /* font-family: "Edu NSW ACT Hand Pre", cursive;  */
+
+*
+{
+    margin: 0;padding: 0;
+}
+
+nav
+{
+    background-color: gray;
+    color: white;
+}
+
+nav li
+{
+    list-style-type: none;
+    display: flex;
+   align-items: center;
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+    font-size: 20px;
+    font-weight: 30px;
+} 
+
+.container
+{
+    display: grid;
+    font-family: "Baloo Bhaina 2", sans-serif;
+    grid-template-columns: repeat(3,12vw);
+    grid-template-rows: repeat(3,12vw);
+ 
+
+}
+
+.box
+{
+    border: 0.5px solid black;
+    font-size: 10vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover
+{
+    background-color: rgb(197, 183, 197);
+}
+
+.gamecontainer
+{
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    
+}
+
+h1
+{
+     padding: 15px 40px;
+     font-family: "Edu NSW ACT Hand Pre", cursive;
+}
+
+#reset
+{
+    padding: 15px 40px;
+     font-family: "Edu NSW ACT Hand Pre", cursive;
+     background-color: rgb(187, 161, 187);
+     box-shadow: 4px 4px 10px rgba(0,0,0,5);
+}
+
+.info
+{
+    padding: 10px 40px;
+     font-family: "Edu NSW ACT Hand Pre", cursive;
+}
+
+.gif img
+{
+   padding: 20px 50px;
+   width: 0px;
+   opacity: 0;
+   transition: width 1s ease-in-out;
+   transition: opacity 0.5s ease-in-out;
+}
+
+.br-0
+{
+  border-right: 0px;
+}
+
+.bl-0
+{
+    border-left: 0px;
+}
+
+.bt-0
+{
+    border-top: 0px;
+}
+
+.bb-0
+{
+    border-bottom: 0px;
+}
+
+@media screen and (max-width:800px)
+{
+    .gamecontainer
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gameinfo
+    {
+        margin-top: 40px;
+    }
+    
+
+}
+
+footer
+{
+    background-color: gray;
+    color: aliceblue;
+     font-family: "Edu NSW ACT Hand Pre", cursive;
+     font-size: 24px;
+     display: flex;
+     justify-content: center;
+     text-align: center;
+}
+
